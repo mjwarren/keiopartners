@@ -57,7 +57,7 @@
         <table>
             <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
             {{#rows}}
-                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a></td></tr>
+                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}}," target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}}" target="_blank">Yelp</a></td></tr>
             {{/rows}}
         </table>
     </script>
@@ -67,15 +67,15 @@
             <h4 class="fauxButton">MOST RECENT SPOT</h4>
             <h2>{{name}}</h2>
             <p class="colorText">{{address}}<p>
-            <p class="colorText">{{city}}{{#state}}, {{state}}{{/state}}{{#postcode}}, {{postcode}}{{/postcode}}</p>
+            <p class="colorText">{{city}},{{#postcode}}, {{postcode}}{{/postcode}}</p>
             <ul>
                 <li><span class="category">Agreement Type:</span> {{Agreement Type}}</li>
                 <li><span class="category">Level of Agreement:</span> {{Level of Agreement}}</li>
                 <li><span class="category">Contributed By:</span> <a href="http://www.twitter.com/{{contributerstwitter}}" target="_blank">@{{contributerstwitter}}</a></li>
             </ul>
             <ul>
-                <li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-                <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
+                <li><a href="https://maps.google.com/maps?q={{address}},{{city}}" target="_blank">View in Google Maps</a></li>
+                <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}}" target="_blank">Find on Yelp</a></li>
             </ul>
         {{/rows}}
     </script>
@@ -89,14 +89,14 @@
             <h4 class="fauxButton">SELECTED SPOT</h4>
             <h2>{{name}}</h2>
             <p class="colorText">{{address}}<p>
-            <p class="colorText">{{city}}{{#state}}, {{state}}{{/state}}{{#postcode}}, {{postcode}}{{/postcode}}</p>
+            <p class="colorText">{{city}}, {{#postcode}}, {{postcode}}{{/postcode}}</p>
             <ul>
                 <li><span class="category">Agreement Type:</span> {{Agreement Type}}</li>
                 <li><span class="category">Level of Agreement:</span> {{Level of Agreement}}</li>
             </ul>
             <ul>
-                <li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-                <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
+                <li><a href="https://maps.google.com/maps?q={{address}},{{city}}" target="_blank">View in Google Maps</a></li>
+                <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}}" target="_blank">Find on Yelp</a></li>
             </ul>
         {{/rows}}
     </script>
