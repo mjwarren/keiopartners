@@ -57,7 +57,7 @@
         <table>
             <tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">City</th><th class="tHeader">Country</th><th class="">Elsewhere</th></tr>
             {{#rows}}
-                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}}," target="_blank">G Map</a> <a class="button" href="http://www.google.com/search?q=find_desc={{name}}" target="_blank">Web</a></td></tr>
+                <tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{city}}</td><td>{{country}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}}," target="_blank">G Map</a> <a class="button" href="http://www.google.com/search?q={{name}}" target="_blank">Web</a></td></tr>
             {{/rows}}
         </table>
     </script>
